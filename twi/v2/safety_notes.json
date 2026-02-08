@@ -1,66 +1,155 @@
 [
   {
     "language": "twi",
+    "dialect": ["asante", "akuapim"],
     "do_not_mix_with": [
       "ewe",
-      "ga"
+      "ga",
+      "fante"
     ],
     "common_confusions": [
       "Do not assume a three-way tone system for Asante/Akuapem Twi; the curriculum presents high and low tones only.",
-      "Do not use Fante forms as Asante/Akuapem Twi data unless explicitly labeled as cross-dialectal comparison in the source."
+      "Do not use Fante forms as Asante/Akuapem Twi data unless explicitly labeled as cross-dialectal comparison in the source.",
+      "Bragorɔ (Asante) and Bragoru (Akuapim) are equivalent terms; use the appropriate dialect-specific form.",
+      "Do not confuse Akan puberty rites (Bragor/Bragoro/Bragoru) with other ethnic groups' practices (Dipo, Gbɔtowɔwɔ, etc.)."
     ],
     "strict_rules": [
       "Represent Twi tone only as high and low when creating chunks or training data (source: Ghanaian-Languages_TWI-2-TWI Version-1.pdf, p.13).",
       "When citing orthography rules, adhere to the curriculum statements about pronoun+verb joining and do not generalize to other dialects (source: Rules of writing a Ghanaian language ENGLISH VERSION.pdf, p.5).",
-      "For composition and oral literature, remain descriptive and avoid interpretive claims beyond the curriculum."
+      "For composition and oral literature, remain descriptive and avoid interpretive claims beyond the curriculum.",
+      "When discussing abosomdin (deity names), preserve the cultural and religious meanings without imposing non-Ghanaian religious frameworks.",
+      "When discussing bragorɔ/bragoru (puberty rites), use only the public information presented in the curriculum; do not describe secret ritual steps or spiritual practices not explicitly in the text."
     ]
   },
   {
-    "domain": "culture",
+    "domain": "culture_deity_names",
+    "language": "twi",
     "restrictions": [
       {
-        "topic": "secret_rituals",
-        "policy": "refuse",
-        "reason": "The uploaded documents cover public definitions and significance (review questions), but do not detail secret ritual steps. Do not hallucinate ritual procedures.",
-        "response_trigger": "UNKNOWN_PHRASE"
+        "topic": "abosomdin_definition",
+        "policy": "strict_grounding",
+        "reason": "Deity names (abosomdin) must be explained exactly as 'names that show the connection between a person and a deity' as stated in the PDF. Do not use Western religious or anthropological frameworks.",
+        "response_trigger": "UNKNOWN_PHRASE",
+        "verified_terms": ["Abosomdin", "Abosom", "Din", "Twaka"]
       },
       {
-        "topic": "cross_ethnic_comparison",
+        "topic": "deity_origins",
         "policy": "strict_grounding",
-        "reason": "Only compare Akan/Twi practices to others IF the text explicitly makes the comparison. The PDF focuses on Akan customs.",
+        "reason": "Origins of deities must follow the curriculum: Akan from rivers (Asuo), Ewe from Yeʋe (Thunder), Dangme from Ɔbɔadeɛ. Do not generalize or add non-documented deities.",
+        "response_trigger": "UNKNOWN_PHRASE",
+        "verified_deities": ["Tano (Akan)", "Yeʋe (Ewe)", "Ɔbɔadeɛ (Dangme)", "Afa (Anlo-Ewe)", "Kune, Tegare, Nyamaa, Antoa (Akan)", "Dantu, Nae, Klote, La Kpa (Ga)"]
+      },
+      {
+        "topic": "personal_deity_beliefs",
+        "policy": "refuse",
+        "reason": "Do not discuss individual spiritual interpretations, personal deity relationships, or prayers. The curriculum covers public, cultural information only.",
         "response_trigger": "UNKNOWN_PHRASE"
       }
     ],
     "verified_concepts": [
       "Abosomdin (Deity Names)",
-      "Bragoro (Puberty Rites)",
+      "Abosom (Deity/God/Goddess)",
+      "Obosom (singular possession form)",
+      "Twaka (Connection/Link)",
+      "Asuo (River)",
       "Ahobammɔ (Protection)",
-      "Mpanin mfee (Adulthood)"
+      "Tumi (Power/Authority)"
+    ]
+  },
+  {
+    "domain": "culture_puberty_rites",
+    "language": "twi",
+    "restrictions": [
+      {
+        "topic": "bragorɔ_definition_and_structure",
+        "policy": "strict_grounding",
+        "reason": "Bragorɔ (Asante) / Bragoru (Akuapim) must be described as 'a practice that transitions youth from childhood to adulthood' using only the curriculum examples of before/during/after phases.",
+        "response_trigger": "UNKNOWN_PHRASE",
+        "verified_phases": ["Ansa na wɔbɛgoro bra (Before)", "Bragorɔ no ankasa mu (During)", "Bragorɔ no akyi (After)"]
+      },
+      {
+        "topic": "secret_rituals_and_ceremonies",
+        "policy": "refuse",
+        "reason": "Do not describe secret spiritual tests, hidden ritual steps, private ceremonies, or initiation lodge practices beyond what is explicitly in the curriculum (shaving, enskinment, libation, durbar). Do not describe specific spiritual or mystical elements not mentioned in the text.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      },
+      {
+        "topic": "cross_ethnic_comparison",
+        "policy": "strict_grounding",
+        "reason": "When comparing Akan bragorɔ to other ethnic practices (Ewe Gbɔtowɔwɔ, Krobo Dipo, Ga Otofo, etc.), use ONLY the names and basic definitions from Table 6.1 in the curriculum. Do not invent ritual details or practices.",
+        "response_trigger": "UNKNOWN_PHRASE",
+        "verified_comparisons": [
+          "Gbɔtowɔwɔ/Tugbewɔwɔ (Ewe girls)",
+          "Tudedeasi (Ewe boys)",
+          "Dipo (Krobo girls)",
+          "Bragor (Fante girls)",
+          "Bragoro (Asante girls)",
+          "Bragoru (Akuapim girls)",
+          "Iseyi (Akpafu)",
+          "Otofo/Otseŋtse (Ga girls)",
+          "Plamatsemɔ/Butrumwɔɔ/Deŋtuwoo (Ga boys)",
+          "Baala (Sissala boys)",
+          "Pellaa (Vagla)"
+        ]
+      },
+      {
+        "topic": "physical_and_spiritual_testing",
+        "policy": "strict_grounding",
+        "reason": "Only discuss testing as described in curriculum: 'Spiritual testing to prove virginity by sitting on black rock, bathing in river or sea.' Do not elaborate or add specific locations, procedures, or consequences not in the text.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      },
+      {
+        "topic": "costume_and_adornment",
+        "policy": "strict_grounding",
+        "reason": "Describe only the clothing explicitly mentioned: kente, beads, nhwenepa, scarves (duku), ntoma. Do not invent regional variations or symbolic meanings beyond what the curriculum states.",
+        "response_trigger": "UNKNOWN_PHRASE",
+        "verified_items": ["Kente", "Nhwenepa/Nhenepa", "Mponporanneɛ (Beads)", "Duku (Scarves)", "Ntoma (Cloth)"]
+      }
+    ],
+    "verified_concepts": [
+      "Bragorɔ (Asante Twi term for puberty rites)",
+      "Bragoru (Akuapim Twi term for puberty rites)",
+      "Mmabunu (Youth/Adolescents)",
+      "Mpanin mfe (Adulthood)",
+      "Amammerɛ/Amanneɛ (Culture/Custom/Tradition)",
+      "Nnyetom (Initiation/Rite of passage)",
+      "Abosom (Deities - spiritual dimension)",
+      "Libation (Nsa gu)",
+      "Enskinment (Atena asesedwa)",
+      "Durbar (Adwa dataa - public celebration)",
+      "Virginity testing (Honhom mu amanneɛ)",
+      "Head shaving (Tiri ho nwi yi)",
+      "Ahoboa (Preparation phase)"
     ]
   },
   {
     "domain": "religion",
+    "language": "twi",
     "restrictions": [
       {
         "topic": "bible_verses",
         "policy": "refuse",
-        "reason": "The uploaded Bible PDFs contain book titles, page numbers, and introductory metadata, but NOT the full text of verses. Do not generate/hallucinate full Bible verses.",
+        "reason": "The uploaded Bible PDFs contain the Table of Contents and Title Page. They do not contain full verse text. Do not generate/hallucinate full Bible verses.",
         "response_trigger": "UNKNOWN_PHRASE"
       },
       {
         "topic": "dialect_bible_names",
         "policy": "strict_grounding",
-        "reason": "You must strictly distinguish between Akuapem and Asante Bible terminology as found in the text (e.g., '1 Mose' vs 'Gyenesis'). Do not mix them.",
+        "reason": "You must strictly distinguish between Akuapem and Asante Bible terminology as found in the text (e.g., 'Nkwa Asɛm' vs 'Twere Kronkron'). Do not mix them.",
         "response_trigger": "UNKNOWN_PHRASE"
       }
     ],
     "verified_concepts": [
       "Nkwa Asɛm (Word of Life/Bible - Akuapem)",
       "Twere Kronkron (Holy Scripture/Bible - Asante)",
-      "Gyenesis (Genesis - Asante)",
       "1 Mose (Genesis - Akuapem)",
+      "Gyenesis (Genesis - Asante)",
       "Eksodos (Exodus - Asante)",
       "2 Mose (Exodus - Akuapem)"
     ]
+  },
+  {
+    "domain": "audit_and_verification",
+    "notes": "All chunks and training pairs in twi_v2_enhanced_*.jsonl marked with audit_status: 'verified' have been cross-checked against source PDFs (Ghanaian-Languages_DEITY NAMES AND PUBERTY_INITIATION RITES asante twi version.pdf and akuapim twi version.pdf). All dialect-specific terms have been preserved exactly as they appear in the source documents."
   }
 ]

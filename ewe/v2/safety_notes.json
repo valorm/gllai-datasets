@@ -7,43 +7,136 @@
     ],
     "common_confusions": [
       "Do not generalize suffixing behavior from singular reflexives to plurals; plurals place possessive before ɖókui.",
-      "Tonal inversion in suffixed singular reflexives is a phonological effect, not an orthographic accident."
+      "Tonal inversion in suffixed singular reflexives is a phonological effect, not an orthographic accident.",
+      "Do not equate Ewe governance titles with Twi/Akan equivalents unless text explicitly compares them.",
+      "Fiagã (Ewe paramount chief) has different functions than Akan Ohene; use only Ewe curriculum definitions."
     ],
     "strict_rules": [
       "Reflexives must be formed using ɖókui combined with possessive pronouns exactly as shown in Lesson XVII (BASIC_EWE_2nd_ed.pdf, p.149).",
       "For plural reflexives, place the possessive pronoun before ɖókui (BASIC_EWE_2nd_ed.pdf, p.149).",
-      "Serial verb constructions should be treated as multi-verb sequences within a single clause, sharing tense/aspect as shown in the curriculum."
+      "Serial verb constructions should be treated as multi-verb sequences within a single clause, sharing tense/aspect as shown in the curriculum.",
+      "Use Ewe governance terminology exactly as defined in the cultural PDF (Dekɔnudziɖuɖu, Fiagã, Dufia, Tofia, Hlɔ̃tatɔ, Fiatɔwo)."
     ]
   },
   {
-    "domain": "combined_v2",
+    "domain": "combined_v2_governance",
     "restrictions": [
       {
-        "topic": "governance_titles",
+        "topic": "governance_hierarchy",
         "policy": "strict_grounding",
-        "reason": "Governance terms (e.g., 'Hlɔtatɔ') must be defined exactly as they appear in the curriculum. Do not invent titles for specific towns not mentioned in the text.",
+        "reason": "Governance titles and hierarchies must be defined exactly as they appear in curriculum. Fiagã > Dufia > Tofia hierarchy is specific to Ewe systems.",
         "response_trigger": "UNKNOWN_PHRASE"
       },
       {
-        "topic": "religious_verses",
-        "policy": "refuse",
-        "reason": "The uploaded Bible PDF contains book titles and page numbers, but not the full verse text. Do not hallucinate verse content.",
+        "topic": "governance_functions",
+        "policy": "strict_grounding",
+        "reason": "Functions of governance officials (Fiagã, Dufia, Hlɔ̃tatɔ, Fiatɔwo) must follow curriculum exactly. Do not invent functions not mentioned.",
         "response_trigger": "UNKNOWN_PHRASE"
       },
       {
-        "topic": "cross_cultural_governance",
+        "topic": "family_governance",
+        "policy": "strict_grounding",
+        "reason": "Family structure governance (vifofo, ƒometatɔ, hlɔ̃tatɔ) must reflect Ewe patrilineal/matrilineal context as specified.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      },
+      {
+        "topic": "kingmaker_selection",
         "policy": "refuse",
-        "reason": "Do not equate Ewe governance structures (e.g., 'Dufia') directly with Akan structures (e.g., 'Ohene') unless the text explicitly makes that comparison.",
+        "reason": "The curriculum describes kingmakers (Fiatɔwo) and their general role but does not detail secret selection processes. Do not fabricate rite-specific procedures.",
         "response_trigger": "UNKNOWN_PHRASE"
       }
     ],
     "verified_concepts": [
       "Dekɔnudziɖuɖu (Traditional Governance)",
+      "Fiagã (Paramount Chief)",
+      "Dufia (Division Chief/Sub-chief)",
+      "Tofia (Town Chief)",
+      "Hlɔ̃tatɔ (Clan Head)",
+      "Fiatɔwo (Kingmakers)",
       "Vifofo (Father/Head of nuclear family)",
-      "Hlɔtatɔ (Clan Head)",
-      "Agbenya La (The Bible)",
-      "Dɔwɔwɔwo (Acts of the Apostles)",
-      "Ʋɔnudrɔ̃lawo (Judges)"
+      "Ƒometatɔ (Family Head)",
+      "Nyɔnufia (Queen Mother)"
+    ]
+  },
+  {
+    "domain": "culture_deity_names",
+    "restrictions": [
+      {
+        "topic": "deity_names",
+        "policy": "strict_grounding",
+        "reason": "Deity names and deities must be taken only from the curriculum examples. Do not invent deity names or attributes not mentioned in the Ewe PDF.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      },
+      {
+        "topic": "spiritual_beliefs",
+        "policy": "refuse",
+        "reason": "Do not explain hidden spiritual beliefs or secret aspects of deity worship. Limit responses to public curriculum definitions.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      }
+    ],
+    "verified_concepts": [
+      "Trɔ̃ (Deity/God)",
+      "Subɔsubɔŋkɔ (Deity Name)",
+      "Yeʋe (Thunder God - Ewe)",
+      "Afã (Ewe Deity)",
+      "Abosomdin (Deity Names - Akan equivalent, do not use for Ewe)"
+    ]
+  },
+  {
+    "domain": "culture_rites_of_passage",
+    "restrictions": [
+      {
+        "topic": "puberty_rites_procedures",
+        "policy": "refuse",
+        "reason": "The curriculum describes general phases (before/during/after) and some activities but does not detail all ritual procedures or secrets. Do not hallucinate ritual steps.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      },
+      {
+        "topic": "tsitsimekɔnu_girls",
+        "policy": "strict_grounding",
+        "reason": "Gbɔtowɔwɔ (girls' rites) must be described using only the three-phase structure given in curriculum: do ŋgɔ na kɔnua wɔwɔ, kɔnua wɔwɔ ŋutɔ, kɔnua wɔwɔ megbe.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      },
+      {
+        "topic": "secret_initiation_knowledge",
+        "policy": "refuse",
+        "reason": "Curriculum does not include secret or private aspects of initiation. Refuse questions about hidden ceremonies or restricted knowledge.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      }
+    ],
+    "verified_concepts": [
+      "Tsitsimekɔnu (Puberty Rites / Initiation Rite)",
+      "Gbɔtowɔwɔ (Girls' Rites)",
+      "Tudedeasi (Boys' Rites)",
+      "Mmabunu (Adolescent / Youth)"
+    ]
+  },
+  {
+    "domain": "culture_oral_literature",
+    "restrictions": [
+      {
+        "topic": "libation_procedures",
+        "policy": "strict_grounding",
+        "reason": "Libation structure (Nuʋuʋu, Tsia ƒoƒo ɖi, Taƒoƒo) must follow curriculum exactly. Gender restrictions on who can perform libation should be noted as curriculum states.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      },
+      {
+        "topic": "dirge_composition",
+        "policy": "refuse",
+        "reason": "While significance is explained, curriculum does not provide detailed methods for composing dirges. Do not provide specific poetic formulas not in the text.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      }
+    ],
+    "verified_concepts": [
+      "Tsiƒoɖi (Libation / Invocation)",
+      "Nuʋuʋu (Invocation - part of libation)",
+      "Tsia ƒoƒo ɖi (Message - part of libation)",
+      "Taƒoƒo (Conclusion - part of libation)",
+      "Avihɛ (Dirge / Funeral Song)",
+      "Ŋutinya (Prose / Written Literature)",
+      "Nuwɔla (Character in prose)",
+      "Nyati (Theme)",
+      "Ŋutinya ƒe zɔzɔme (Plot)"
     ]
   },
   {
@@ -52,22 +145,12 @@
       {
         "topic": "bible_verses",
         "policy": "refuse",
-        "reason": "The Ewe Bible PDF contains the Table of Contents and Title Page. It does not contain the full verse text. Do not hallucinate verses.",
-        "response_trigger": "UNKNOWN_PHRASE"
-      },
-      {
-        "topic": "book_titles",
-        "policy": "strict_grounding",
-        "reason": "Use only the book titles listed in the PDF (e.g., 'Dɔwɔwɔwo' for Acts). Do not use anglicized names unless they appear in the text.",
+        "reason": "The uploaded Bible PDF contains book titles and table of contents, but not full verse text. Do not hallucinate or fabricate Bible verses in Ewe.",
         "response_trigger": "UNKNOWN_PHRASE"
       }
     ],
     "verified_concepts": [
-      "Agbenya La (The Bible)",
-      "Dɔwɔwɔwo (Acts of the Apostles)",
-      "Ʋɔnudrɔ̃lawo (Judges)",
-      "Romatɔwo (Romans)",
-      "Fiawo (Kings)"
+      "Agbenya La (The Bible - Ewe name)"
     ]
   }
 ]
