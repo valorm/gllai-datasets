@@ -1,16 +1,73 @@
-{
-  "language": "ewe",
-  "do_not_mix_with": [
-    "twi",
-    "ga"
-  ],
-  "common_confusions": [
-    "Do not generalize suffixing behavior from singular reflexives to plurals; plurals place possessive before ɖókui.",
-    "Tonal inversion in suffixed singular reflexives is a phonological effect, not an orthographic accident."
-  ],
-  "strict_rules": [
-    "Reflexives must be formed using ɖókui combined with possessive pronouns exactly as shown in Lesson XVII (BASIC_EWE_2nd_ed.pdf, p.149).",
-    "For plural reflexives, place the possessive pronoun before ɖókui (BASIC_EWE_2nd_ed.pdf, p.149).",
-    "Serial verb constructions should be treated as multi-verb sequences within a single clause, sharing tense/aspect as shown in the curriculum."
-  ]
-}
+[
+  {
+    "language": "ewe",
+    "do_not_mix_with": [
+      "twi",
+      "ga"
+    ],
+    "common_confusions": [
+      "Do not generalize suffixing behavior from singular reflexives to plurals; plurals place possessive before ɖókui.",
+      "Tonal inversion in suffixed singular reflexives is a phonological effect, not an orthographic accident."
+    ],
+    "strict_rules": [
+      "Reflexives must be formed using ɖókui combined with possessive pronouns exactly as shown in Lesson XVII (BASIC_EWE_2nd_ed.pdf, p.149).",
+      "For plural reflexives, place the possessive pronoun before ɖókui (BASIC_EWE_2nd_ed.pdf, p.149).",
+      "Serial verb constructions should be treated as multi-verb sequences within a single clause, sharing tense/aspect as shown in the curriculum."
+    ]
+  },
+  {
+    "domain": "combined_v2",
+    "restrictions": [
+      {
+        "topic": "governance_titles",
+        "policy": "strict_grounding",
+        "reason": "Governance terms (e.g., 'Hlɔtatɔ') must be defined exactly as they appear in the curriculum. Do not invent titles for specific towns not mentioned in the text.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      },
+      {
+        "topic": "religious_verses",
+        "policy": "refuse",
+        "reason": "The uploaded Bible PDF contains book titles and page numbers, but not the full verse text. Do not hallucinate verse content.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      },
+      {
+        "topic": "cross_cultural_governance",
+        "policy": "refuse",
+        "reason": "Do not equate Ewe governance structures (e.g., 'Dufia') directly with Akan structures (e.g., 'Ohene') unless the text explicitly makes that comparison.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      }
+    ],
+    "verified_concepts": [
+      "Dekɔnudziɖuɖu (Traditional Governance)",
+      "Vifofo (Father/Head of nuclear family)",
+      "Hlɔtatɔ (Clan Head)",
+      "Agbenya La (The Bible)",
+      "Dɔwɔwɔwo (Acts of the Apostles)",
+      "Ʋɔnudrɔ̃lawo (Judges)"
+    ]
+  },
+  {
+    "domain": "religion",
+    "restrictions": [
+      {
+        "topic": "bible_verses",
+        "policy": "refuse",
+        "reason": "The Ewe Bible PDF contains the Table of Contents and Title Page. It does not contain the full verse text. Do not hallucinate verses.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      },
+      {
+        "topic": "book_titles",
+        "policy": "strict_grounding",
+        "reason": "Use only the book titles listed in the PDF (e.g., 'Dɔwɔwɔwo' for Acts). Do not use anglicized names unless they appear in the text.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      }
+    ],
+    "verified_concepts": [
+      "Agbenya La (The Bible)",
+      "Dɔwɔwɔwo (Acts of the Apostles)",
+      "Ʋɔnudrɔ̃lawo (Judges)",
+      "Romatɔwo (Romans)",
+      "Fiawo (Kings)"
+    ]
+  }
+]

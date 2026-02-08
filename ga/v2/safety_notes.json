@@ -1,16 +1,42 @@
-{
-  "language": "ga",
-  "do_not_mix_with": [
-    "twi",
-    "ewe"
-  ],
-  "common_confusions": [
-    "Do not treat legacy abbreviations as canonical pronouns.",
-    "Do not generalize tone marking beyond examples."
-  ],
-  "strict_rules": [
-    "Follow Ga guide orthography for vowels and digraphs exactly as presented (gaguide_2.pdf, Vowels and Digraphs sections).",
-    "Respect tone marking conventions in the Ga grammatical sketch; tones are inherent in each syllable and are marked in examples where needed (Zimmermann, 1858, pp.10–12).",
-    "When extracting pronoun forms, use them as examples tied to the guide and avoid asserting them as the only canonical forms if the source shows variation (gaguide_2.pdf, Pronouns section)."
-  ]
-}
+[
+  {
+    "language": "ga",
+    "do_not_mix_with": [
+      "twi",
+      "ewe"
+    ],
+    "common_confusions": [
+      "Do not treat legacy abbreviations as canonical pronouns.",
+      "Do not generalize tone marking beyond examples."
+    ],
+    "strict_rules": [
+      "Follow Ga guide orthography for vowels and digraphs exactly as presented (gaguide_2.pdf, Vowels and Digraphs sections).",
+      "Respect tone marking conventions in the Ga grammatical sketch; tones are inherent in each syllable and are marked in examples where needed (Zimmermann, 1858, pp.10–12).",
+      "When extracting pronoun forms, use them as examples tied to the guide and avoid asserting them as the only canonical forms if the source shows variation (gaguide_2.pdf, Pronouns section)."
+    ]
+  },
+  {
+    "domain": "combined_v2",
+    "restrictions": [
+      {
+        "topic": "secret_rituals",
+        "policy": "refuse",
+        "reason": "Puberty rites (Kpokuafoian hetsuumɔ) involve specific customs. Only describe the general definition and significance provided in the text. Do not invent ritual steps.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      },
+      {
+        "topic": "governance_definitions",
+        "policy": "strict_grounding",
+        "reason": "Governance terms like 'Maŋkuramɔ' must be defined exactly as 'the action of governing leaders' (maŋkuralɔi) as stated in the PDF.",
+        "response_trigger": "UNKNOWN_PHRASE"
+      }
+    ],
+    "verified_concepts": [
+      "Kpokuafoian hetsuumɔ (Puberty Rites)",
+      "Maŋkuramɔ (Governance)",
+      "Maŋkuralɔi (Governing leaders)",
+      "Gbekɛbii ajeŋ (Childhood)",
+      "Onukpai (Adulthood)"
+    ]
+  }
+]
