@@ -1,0 +1,16 @@
+{
+  "language": "twi",
+  "do_not_mix_with": [
+    "ewe",
+    "ga"
+  ],
+  "common_confusions": [
+    "Do not assume a three-way tone system for Asante/Akuapem Twi; the curriculum presents high and low tones only.",
+    "Do not use Fante forms as Asante/Akuapem Twi data unless explicitly labeled as cross-dialectal comparison in the source."
+  ],
+  "strict_rules": [
+    "Represent Twi tone only as high and low when creating chunks or training data (source: Ghanaian-Languages_TWI-2-TWI Version-1.pdf, p.13).",
+    "When citing orthography rules, adhere to the curriculum statements about pronoun+verb joining and do not generalize to other dialects (source: Rules of writing a Ghanaian language ENGLISH VERSION.pdf, p.5).",
+    "For composition and oral literature, remain descriptive and avoid interpretive claims beyond the curriculum."
+  ]
+}

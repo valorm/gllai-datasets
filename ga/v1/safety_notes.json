@@ -1,0 +1,16 @@
+{
+  "language": "ga",
+  "do_not_mix_with": [
+    "twi",
+    "ewe"
+  ],
+  "common_confusions": [
+    "Do not assume Ga orthography or pronoun forms identical to Akan/Twi forms; the Ga guide uses its own tables and examples.",
+    "Avoid treating abbreviations or editorial marks in older grammars as canonical orthography for modern training targets."
+  ],
+  "strict_rules": [
+    "Follow Ga guide orthography for vowels and digraphs exactly as presented (gaguide_2.pdf, Vowels and Digraphs sections).",
+    "Respect tone marking conventions in the Ga grammatical sketch; tones are inherent in each syllable and are marked in examples where needed (Zimmermann, 1858, pp.10–12).",
+    "When extracting pronoun forms, use them as examples tied to the guide and avoid asserting them as the only canonical forms if the source shows variation (gaguide_2.pdf, Pronouns section)."
+  ]
+}

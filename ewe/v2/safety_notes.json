@@ -1,0 +1,16 @@
+{
+  "language": "ewe",
+  "do_not_mix_with": [
+    "twi",
+    "ga"
+  ],
+  "common_confusions": [
+    "Do not generalize suffixing behavior from singular reflexives to plurals; plurals place possessive before ɖókui.",
+    "Tonal inversion in suffixed singular reflexives is a phonological effect, not an orthographic accident."
+  ],
+  "strict_rules": [
+    "Reflexives must be formed using ɖókui combined with possessive pronouns exactly as shown in Lesson XVII (BASIC_EWE_2nd_ed.pdf, p.149).",
+    "For plural reflexives, place the possessive pronoun before ɖókui (BASIC_EWE_2nd_ed.pdf, p.149).",
+    "Serial verb constructions should be treated as multi-verb sequences within a single clause, sharing tense/aspect as shown in the curriculum."
+  ]
+}
