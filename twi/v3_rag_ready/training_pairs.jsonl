@@ -1,5 +1,3 @@
-{"instruction": "What is the official NaCCA translation for 'Sounds of the Language' in Twi (Akuapem)?", "input": "Sounds of the Language", "output": "Kasa no Nnyigye", "source": "Akuapem-Twi-TM-y1-bk-1-ONLINE.pdf"}
-{"instruction": "What is the official NaCCA translation for 'Sounds of the Language' in Twi (Asante)?", "input": "Sounds of the Language", "output": "Kasa no Nnyigyeɛ", "source": "Asante-Twi-Teacher-manual-Y1-bk-1-online.pdf"}
-{"instruction": "What is the official NaCCA translation for 'Vowels' in Twi (Akuapem)?", "input": "Vowels", "output": "Ablɔdegbe", "source": "Akuapem-Twi-TM-y1-bk-1-ONLINE.pdf"}
-{"instruction": "What is the official NaCCA translation for 'Vowels' in Twi (Asante)?", "input": "Vowels", "output": "Ablɔdeɛ", "source": "Asante-Twi-Teacher-manual-Y1-bk-1-online.pdf"}
-{"instruction": "What is the official NaCCA translation for 'Puberty Rites' in Twi (Asante)?", "input": "Puberty Rites", "output": "Bragoro", "source": "Asante-Twi-Teacher-Manual-Y1-BK-2-online.pdf"}
+{"instruction": "What is the official NaCCA Twi (Asante) term for 'Sounds of the Language'?", "input": "Sounds of the Language", "output": "Kasa no Nnyigyeɛ", "source": "NaCCA Book 1"}
+{"instruction": "What is the official NaCCA Twi (Akuapem) term for 'Sounds of the Language'?", "input": "Sounds of the Language", "output": "Kasa no Nnyigye", "source": "NaCCA Book 1"}
+{"instruction": "What is the official NaCCA Twi term for 'Puberty Rites'?", "input": "Puberty Rites", "output": "Bragoro", "source": "NaCCA Book 2"}

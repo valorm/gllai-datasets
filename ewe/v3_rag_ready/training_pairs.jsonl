@@ -1,5 +1,2 @@
-{"instruction": "What is the official NaCCA translation for 'Sounds of the Language' in Ewe?", "input": "Sounds of the Language", "output": "Gbedidiwo", "source": "Ewe-Teacher-manual-y1-bk1_Online-1.pdf"}
-{"instruction": "What is the official NaCCA translation for 'Phonology' in Ewe?", "input": "Phonology", "output": "Gbedidingɔŋlɔ", "source": "Ewe-Teacher-manual-y1-bk1_Online-1.pdf"}
-{"instruction": "What is the official NaCCA translation for 'Vowels' in Ewe?", "input": "Vowels", "output": "Ablɔdegbedidiwo", "source": "Ewe-Teacher-manual-y1-bk1_Online-1.pdf"}
-{"instruction": "What is the official NaCCA translation for 'Deity Names' in Ewe?", "input": "Deity Names", "output": "Subɔsubɔŋkɔwo", "source": "Ewe-Teacher-Manual-Y1-bk-2-Online-1.pdf"}
-{"instruction": "What is the official NaCCA translation for 'Puberty Rites' in Ewe?", "input": "Puberty Rites", "output": "Tsitsimekɔnuwo", "source": "Ewe-Teacher-Manual-Y1-bk-2-Online-1.pdf"}
+{"instruction": "What is the official NaCCA Ewe term for 'Vowels'?", "input": "Vowels", "output": "Ablɔdegbedidiwo", "source": "NaCCA Book 1"}
+{"instruction": "What is the official NaCCA Ewe term for 'Puberty Rites'?", "input": "Puberty Rites", "output": "Tsitsimekɔnuwo", "source": "NaCCA Book 2"}

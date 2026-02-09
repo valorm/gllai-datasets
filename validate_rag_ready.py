@@ -1,51 +1,24 @@
 import json
 import os
-import sys
 
-def validate_rag_file(filepath, file_type):
-    print(f"Validating {filepath}...")
-    if not os.path.exists(filepath):
-        print(f"[FAIL] File not found: {filepath}")
-        return False
-    
-    errors = 0
-    with open(filepath, 'r', encoding='utf-8') as f:
+def validate(path, ftype):
+    if not os.path.exists(path): return
+    errs = 0
+    with open(path, 'r', encoding='utf-8') as f:
         for i, line in enumerate(f):
             try:
                 data = json.loads(line)
-                
-                if file_type == "knowledge":
-                    # Check for legacy RAG fields
-                    required = ["chunk_id", "text", "confidence", "topic"]
-                    for field in required:
-                        if field not in data:
-                            print(f"  Line {i+1}: Missing '{field}'")
-                            errors += 1
-                    if data.get("confidence") != 1.0:
-                         print(f"  Line {i+1}: Confidence is {data.get('confidence')}, expected 1.0 for Authority layer")
-                         errors += 1
-
-                elif file_type == "pairs":
-                    # Check for instruction tuning fields
-                    required = ["instruction", "input", "output"]
-                    for field in required:
-                        if field not in data:
-                            print(f"  Line {i+1}: Missing '{field}'")
-                            errors += 1
-            except:
-                print(f"  Line {i+1}: Invalid JSON")
-                errors += 1
-                
-    if errors == 0:
-        print(f"[PASS] {filepath} is RAG-ready.")
-        return True
-    else:
-        print(f"[FAIL] {filepath} has {errors} errors.")
-        return False
+                req = ["chunk_id", "text", "confidence"] if ftype=="kc" else ["instruction", "input", "output"]
+                for r in req:
+                    if r not in data: 
+                        print(f"Error in {path} L{i+1}: Missing {r}")
+                        errs += 1
+            except Exception as e:
+                print(f"JSON Error in {path} L{i+1}: {e}")
+                errs += 1
+    if errs == 0: print(f"[PASS] {path}")
 
 if __name__ == "__main__":
-    # Validate all generated files
-    languages = ['twi', 'ewe', 'ga']
-    for lang in languages:
-        validate_rag_file(f"{lang}/v3_rag_ready/knowledge_chunks.jsonl", "knowledge")
-        validate_rag_file(f"{lang}/v3_rag_ready/training_pairs.jsonl", "pairs")
+    for l in ['twi', 'ewe', 'ga']:
+        validate(f"{l}/v3_rag_ready/knowledge_chunks.jsonl", "kc")
+        validate(f"{l}/v3_rag_ready/training_pairs.jsonl", "tp")

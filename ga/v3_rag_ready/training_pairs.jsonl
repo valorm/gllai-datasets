@@ -1,5 +1,2 @@
-{"instruction": "What is the official NaCCA translation for 'Sounds of the Language' in Ga?", "input": "Sounds of the Language", "output": "Wiemɔ Mli Gbee", "source": "Ga-Teacher-manual-y1-bk1-ONLINE.pdf"}
-{"instruction": "What is the official NaCCA translation for 'Vowels' in Ga?", "input": "Vowels", "output": "Faaji", "source": "Ga-Teacher-manual-y1-bk1-ONLINE.pdf"}
-{"instruction": "What is the official NaCCA translation for 'Digraphs' in Ga?", "input": "Digraphs", "output": "Agba", "source": "Ga-Teacher-manual-y1-bk1-ONLINE.pdf"}
-{"instruction": "What is the official NaCCA translation for 'Puberty Rites' in Ga?", "input": "Puberty Rites", "output": "Gbeawoo", "source": "Ga-Teacher-Manual-Y1-bk2-ONLINE.pdf"}
-{"instruction": "What is the official NaCCA translation for 'Chieftaincy' in Ga?", "input": "Chieftaincy", "output": "Maŋtsɛyeli", "source": "Ga-Teacher-Manual-Y1-bk2-ONLINE.pdf"}
+{"instruction": "What is the Ga term for 'Digraphs' according to NaCCA?", "input": "Digraphs", "output": "Agba", "source": "NaCCA Book 1"}
+{"instruction": "What is the Ga term for 'Puberty Rites' according to NaCCA?", "input": "Puberty Rites", "output": "Gbeawoo", "source": "NaCCA Book 2"}

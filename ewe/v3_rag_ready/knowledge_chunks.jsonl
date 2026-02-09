@@ -1,4 +1,2 @@
-{"chunk_id": "ewe_v3_auth_001", "language": "ewe", "topic": "Ablɔdegbedidi", "text": "Enye gbedidi si me ygbɔ ɖina faa le egbɔgblɔ me.", "confidence": 1.0, "source": "Ewe-Teacher-manual-y1-bk1_Online-1.pdf", "metadata": {"type": "definition"}}
-{"chunk_id": "ewe_v3_auth_002", "language": "ewe", "topic": "Xaxagbedidi", "text": "Enye gbedidi si me ygbɔ xaxana le egbɔgblɔ me.", "confidence": 1.0, "source": "Ewe-Teacher-manual-y1-bk1_Online-1.pdf", "metadata": {"type": "definition"}}
-{"chunk_id": "ewe_v3_auth_003", "language": "ewe", "topic": "Tsitsimekɔnuwo", "text": "Le Eveawo dome la, tsitsimekɔnuwo nye kɔnu siwo wowɔna na ɖevi siwo tsi.", "confidence": 1.0, "source": "Ewe-Teacher-Manual-Y1-bk-2-Online-1.pdf", "metadata": {"type": "definition"}}
-{"chunk_id": "ewe_v3_auth_004", "language": "ewe", "topic": "Subɔsubɔŋkɔwo", "text": "Ehea kadodo si le ame ade kple trõ, dzo alo nɔnɔme siwo le ŋutise me la dome.", "confidence": 1.0, "source": "Ewe-Teacher-Manual-Y1-bk-2-Online-1.pdf", "metadata": {"type": "definition"}}
+{"chunk_id": "ewe_v3_kc_001", "text": "Ablɔdegbedidi enye gbedidi si me ygbɔ ɖina faa le egbɔgblɔ me.", "confidence": 1.0, "topic": "Phonology", "source": "NaCCA Manual Book 1"}
+{"chunk_id": "ewe_v3_kc_002", "text": "Tsitsimekɔnuwo nye kɔnu siwo wowɔna na ɖevi siwo tsi.", "confidence": 1.0, "topic": "Culture", "source": "NaCCA Manual Book 2"}
