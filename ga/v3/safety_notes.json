@@ -1,0 +1,31 @@
+{
+  "version": "3.0",
+  "layer": "1 (Core Linguistic Authority)",
+  "source_authority": "NaCCA/Ministry of Education Teacher Manuals (Year 1)",
+  "critical_rules": [
+    {
+      "id": "GA_RULE_01",
+      "category": "Linguistic Categorization",
+      "severity": "HIGH",
+      "description": "The concept of 'Agba' (Digraphs) is a primary linguistic category in the Ga curriculum. It must not be merged silently into 'Consonants' or 'Vowels'. It must be treated as a distinct entity as per the Table of Contents."
+    },
+    {
+      "id": "GA_RULE_02",
+      "category": "Vowel Gemination",
+      "severity": "HIGH",
+      "description": "Ga orthography frequently uses double vowels (e.g., 'aa', 'ee', 'oo') to denote length or tense. These must never be shortened to single vowels. 'Gbeawoo' must strictly be spelled with 'oo'."
+    },
+    {
+      "id": "GA_RULE_03",
+      "category": "Cultural Sovereignty",
+      "severity": "CRITICAL",
+      "description": "Terms related to 'Maŋtsɛyeli' (Chieftaincy) and 'Wɔŋgbɛi' (Deities) refer to specific Ga traditional structures. Do not conflate these with Akan or Ewe structures. Maintain the specific Ga context provided in the Book 2 manual."
+    },
+    {
+      "id": "GA_RULE_04",
+      "category": "Taboos and Oaths",
+      "severity": "HIGH",
+      "description": "'Kitsii' (Taboos) and 'Kitakāa' (Oaths) are legally and culturally binding concepts in traditional context. Definitions must be precise and derived solely from the authorized text."
+    }
+  ]
+}

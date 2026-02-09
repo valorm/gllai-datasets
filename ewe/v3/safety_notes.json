@@ -1,0 +1,31 @@
+{
+  "version": "3.0",
+  "layer": "1 (Core Linguistic Authority)",
+  "source_authority": "NaCCA/Ministry of Education Teacher Manuals (Year 1)",
+  "critical_rules": [
+    {
+      "id": "EWE_RULE_01",
+      "category": "Orthographic Integrity",
+      "severity": "CRITICAL",
+      "description": "The characters 'ɖ', 'ƒ', 'ʋ', 'ŋ', 'ɔ', and 'ɛ' are non-negotiable. ASCII transliterations (e.g., using 'f' for 'ƒ' or 'v' for 'ʋ') are strictly forbidden in Layer 1 outputs."
+    },
+    {
+      "id": "EWE_RULE_02",
+      "category": "Deity and Religious Terminology",
+      "severity": "HIGH",
+      "description": "Terms under 'Subɔsubɔŋkɔwo' (Deity Names) must be handled with neutrality and accuracy. Use the official definitions found in the manual. Do not categorize them using external religious frameworks (e.g., 'idol worship') unless explicitly stated in the source text."
+    },
+    {
+      "id": "EWE_RULE_03",
+      "category": "Tone Awareness",
+      "severity": "MEDIUM",
+      "description": "While tone marking may vary in source texts, context is key. Ensure 'Gbe' (Tone) and 'Gbedidi' (Sound) definitions are distinct and accurately reflect the NaCCA curriculum's phonological framework."
+    },
+    {
+      "id": "EWE_RULE_04",
+      "category": "Cultural Rites",
+      "severity": "HIGH",
+      "description": "'Tsitsimekɔnuwo' (Puberty Rites) involves specific cultural protocols. Do not generate fictional or assumed steps for these rites. Only output what is explicitly documented in the knowledge chunks."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "version": "3.0",
+  "layer": "1 (Core Linguistic Authority)",
+  "source_authority": "NaCCA/Ministry of Education Teacher Manuals (Year 1)",
+  "critical_rules": [
+    {
+      "id": "TWI_RULE_01",
+      "category": "Dialect Purity",
+      "severity": "CRITICAL",
+      "description": "Strict separation of dialects is required. Data tagged as 'Asante' must NEVER be presented as 'Akuapem' and vice versa. Mixing dialectal orthography (e.g., mixing 'e' and 'ɛ' indiscriminately) corrupts the authority of the dataset."
+    },
+    {
+      "id": "TWI_RULE_02",
+      "category": "Cultural Taboos",
+      "severity": "HIGH",
+      "description": "Terms categorized under 'Akyiwade' (Taboos) and 'Ntam' (Oaths) carry significant cultural weight. Definitions for these terms must be provided verbatim from the source manual. Do not attempt to summarize, interpret, or trivialize these concepts."
+    },
+    {
+      "id": "TWI_RULE_03",
+      "category": "Orthography Enforcement",
+      "severity": "HIGH",
+      "description": "The open vowels 'ɛ' and 'ɔ' are mandatory. Replacing them with 'e' or 'o' is considered a spelling error in this layer. The source PDF orthography takes precedence over any external dictionary."
+    },
+    {
+      "id": "TWI_RULE_04",
+      "category": "Rites of Passage",
+      "severity": "MEDIUM",
+      "description": "Descriptions of 'Bragoro' (Puberty Rites) and 'Ayiyɛ' (Funeral Rites) are sensitive. Ensure the distinction between 'Puberty Rites' (Standard English) and the specific local term 'Bragoro' is maintained."
+    }
+  ]
+}
